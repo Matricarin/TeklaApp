@@ -25,10 +25,26 @@ namespace BeamApp
             Model myModel = new Model();
             if (myModel.GetConnectionStatus())
             {
-                TSG.Point startPoint = new TSG.Point(0, 0, 0);
-                TSG.Point endPoint = new TSG.Point(0, 3000, 0);
-                Beam myBeam = new Beam();
+                //Enter coordinates 
+                /*TSG.Point startPoint = new TSG.Point(0, 0, 0);
+                TSG.Point endPoint = new TSG.Point(0, 3000, 0);*/
+
+                //Enter coordinates. using interface 
+                Tekla.Structures.Model.UI.Picker picker = new Tekla.Structures.Model.UI.Picker();
+                TSG.Point startPoint = picker.PickPoint("Pick the start point");
+                TSG.Point endPoint = picker.PickPoint("Pick the end point");
+                Beam myBeam = new Beam(startPoint,endPoint);
+                myBeam.Profile.ProfileString = "L100X16_8509_93";
+                myBeam.Material.MaterialString = "C355-5";
+                myBeam.Name = InsertBeamName.Text;
+                myBeam.Insert();
+                myModel.CommitChanges();
             }
+        }
+
+        private void InsertBeamName_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
