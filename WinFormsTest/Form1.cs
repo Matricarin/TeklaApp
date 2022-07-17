@@ -5,21 +5,28 @@ namespace WinFormsTest
         public Form1()
         {
             InitializeComponent();
-            Text = "Hello!";
-            this.BackColor = Color.BlueViolet;
-            //1 method to change the form
-            /*this.Width = 250;
-            this.Height = 250;*/
-            //2 method to change the form
-            this.Size = new Size(200, 400);
-            this.StartPosition = FormStartPosition.CenterScreen;
-            this.BackgroundImage = Image.FromFile("D:\\repos\\TeklaApp\\TeklaApp\\WinFormsTest\\Image.jpg");
+            this.Load += LoadEvent;
         }
 
+        private void LoadEvent(object? sender, EventArgs e)
+        {
+            this.BackColor = SystemColors.Window;
+        }
 
         private void Hello_button_Click(object? sender, EventArgs e)
         {
             MessageBox.Show("Hello!");
+        }
+
+        private void Hello_button2_Click(object sender, EventArgs e)
+        {
+            Form2 newForm2 = new Form2(this);
+            newForm2.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
