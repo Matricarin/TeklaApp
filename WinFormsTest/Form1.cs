@@ -28,5 +28,11 @@ namespace WinFormsTest
         {
 
         }
+
+        private void CircleFormButton_Click(object sender, EventArgs e)
+        {
+            Form3 newForm3 = new Form3(this);
+            newForm3.Show();
+        }
     }
 }
