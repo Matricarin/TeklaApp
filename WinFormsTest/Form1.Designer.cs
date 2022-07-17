@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Hello_button = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Hello_button
+            // 
+            this.Hello_button.FlatAppearance.BorderColor = System.Drawing.Color.Goldenrod;
+            this.Hello_button.FlatAppearance.BorderSize = 20;
+            this.Hello_button.Font = new System.Drawing.Font("EuroRoman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Hello_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Hello_button.Location = new System.Drawing.Point(17, 13);
+            this.Hello_button.Name = "Hello_button";
+            this.Hello_button.Size = new System.Drawing.Size(112, 41);
+            this.Hello_button.TabIndex = 0;
+            this.Hello_button.Text = "Say \"Hello!\"";
+            this.Hello_button.UseVisualStyleBackColor = true;
+            this.Hello_button.Click += new System.EventHandler(this.Hello_button_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.Hello_button);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Name = "Form1";
+            this.Text = "TEST";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button Hello_button;
     }
 }

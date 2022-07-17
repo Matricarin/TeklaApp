@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeamApp", "BeamApp\BeamApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContourPlateApp", "ContourPlateApp\ContourPlateApp.csproj", "{52E0292D-D32D-4F01-BE24-4378F5BF7453}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsTest", "WinFormsTest\WinFormsTest.csproj", "{5F90B0F8-7F41-4B8E-808C-81E534184362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{52E0292D-D32D-4F01-BE24-4378F5BF7453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E0292D-D32D-4F01-BE24-4378F5BF7453}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E0292D-D32D-4F01-BE24-4378F5BF7453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F90B0F8-7F41-4B8E-808C-81E534184362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F90B0F8-7F41-4B8E-808C-81E534184362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F90B0F8-7F41-4B8E-808C-81E534184362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F90B0F8-7F41-4B8E-808C-81E534184362}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
